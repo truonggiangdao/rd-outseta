@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Login Page</h1>
 
+    <div id="login-embed"></div>
+    <script>
+      var o_login_options = {
+        id: "Outseta",
+        domain: "vizion.outseta.com",
+        load: "auth",
+        auth: {
+          widgetMode: "login",
+          id: "login_embed",
+          mode: "embed",
+          selector: "#login-embed",
+        },
+      };
+    </script>
+    <script
+      src="https://cdn.outseta.com/outseta.min.js"
+      data-options="o_login_options"
+    ></script>
+
+    <p><a href="profile.html">View your profile</a></p>
+
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
     </ul>
-</body>
+  </body>
 </html>
